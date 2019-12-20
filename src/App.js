@@ -10,6 +10,7 @@ import styles from "styled-components";
 const Links = styles.h3`
   display:inline-block;
   margin:10px;
+  margin-left:0px;
   color:black;
 `
 
@@ -21,7 +22,7 @@ export default function App() {
       <Link to="/"><Links>Home</Links></Link>
       <Link to="/characters"><Links>Characters</Links></Link>
 
-      <SearchForm />
+      <Route exact path="/characters" component={SearchForm} />
 
       <Route exact path ="/" component={WelcomePage} />
       <Route exact path="/card/:id" component={CharacterCard} />

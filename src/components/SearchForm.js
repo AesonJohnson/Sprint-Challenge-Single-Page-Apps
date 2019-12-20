@@ -1,12 +1,18 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import CharacterCard from "./CharacterCard";
+import styles from "styled-components";
+
+const Search = styles.div`
+  margin:20px;
+  margin-top:10px;
+  margin-left:0px;
+`
 
 export default function SearchForm(props) {
+  const [characters, setCharacters] = useState([]);
   const [searchTerm, setSearchTerm] = useState("")
   const [searchResults, setSearchResult] = useState(characters);
-
-  const [characters, setCharacters] = useState([]);
 
   useEffect(() => {
     axios.get("https://rickandmortyapi.com/api/character/")
@@ -32,11 +38,11 @@ export default function SearchForm(props) {
   }
  
   return (
-    <section className="search-form">
-      <form onSubmit={event => handleSubmit(event)}>
-          <input
-            id="character"
+    <Search>
+      <form onSubmit={handleSubmit}>
+        <input
             type="text"
+            id="character"
             name="character"
             placeholder="Search"
             value={searchTerm}
@@ -53,6 +59,6 @@ export default function SearchForm(props) {
           species={card.species}
         />
       ))}
-    </section>
+    </Search>
   );
 }
