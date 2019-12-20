@@ -3,7 +3,7 @@ import axios from "axios";
 import CharacterCard from "./CharacterCard";
 import styles from "styled-components";
 
-const Search = styles.div`
+const SearchButton = styles.div`
   margin:20px;
   margin-top:10px;
   margin-left:0px;
@@ -38,7 +38,7 @@ export default function SearchForm(props) {
   }
  
   return (
-    <Search>
+    <SearchButton>
       <form onSubmit={handleSubmit}>
         <input
             type="text"
@@ -59,6 +59,6 @@ export default function SearchForm(props) {
           species={card.species}
         />
       ))}
-    </Search>
+    </SearchButton>
   );
 }

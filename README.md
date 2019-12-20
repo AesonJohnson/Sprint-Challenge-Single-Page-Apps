@@ -27,7 +27,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ]  Explain benefit(s) using `client-side routing`?
 
-> Answer:
+> Answer: Client-side routing mimics traditional multipage websites, but has the added bonus of faster download speeds. Each page doesn't have to be downloaded over and over again; rather, the whole thing is downloaded at once, and nothing has to be reloaded. 
 
 ## Project Set Up
 
