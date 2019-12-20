@@ -1,13 +1,12 @@
 import React from "react";
 
-
-export default function CharacterCard({url, name, gender, species}) {
+export default function CharacterCard(props) {
   return (
     <div>
-      <img src={url} />
-      <h2>{name}</h2>
-      <p>Gender: {gender}</p>
-      <p>Species: {species}</p>
+      <img src={props.url} />
+      <h2>{props.name}</h2>
+      <p>Gender: {props.gender}</p>
+      <p>Species: {props.species}</p>
     </div>
   );
 }
