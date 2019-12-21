@@ -27,7 +27,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ]  Explain benefit(s) using `client-side routing`?
 
-> Answer:
+> Answer: Client-side routing mimics traditional multipage websites, but has the added bonus of faster download speeds. Each page doesn't have to be downloaded over and over again; rather, the whole thing is downloaded at once, and nothing has to be reloaded. 
 
 ## Project Set Up
 
@@ -39,7 +39,7 @@ Follow these steps to set up and work on your project:
 - [ ]  Create a new Branch on the clone: `git checkout -b <firstName-lastName>`.
 - [ ]  Implement the project on this branch, committing changes regularly.
 - [ ]  Push commits: `git push origin <firstName-lastName>`.
-- [ ]  **LOOK** at your project directory and notice it's just a plain ol' React App that we've built using `create-react-app`.
+- [ ]  **LOOK** at your project directory and notice it's just a plain ol' Reac.t App that we've built using `create-react-app`.
 - [ ]  **RUN** `yarn install` or `npm install` to retrieve the client-side dependencies.
 - [ ]  **RUN** `yarn start` or `npm start` to fire up your React application.
 
